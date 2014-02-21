@@ -1,7 +1,17 @@
 @import "bootstrap/less/bootstrap.less";
 
-input, textarea, select {
+* {
+	color: #666;
+}
+
+input, textarea, select, input.text, input.search, input.file, textarea.textarea, select.select {
+	border: none;
+	background: none;
+	padding: 10px;
+
 	.form-control;
+	display: inline-block;
+	width: auto;
 }
 
 // .has-success {

@@ -5772,7 +5772,20 @@ button.close {
     display: none !important;
   }
 }
-input {
+* {
+  color: #666;
+}
+input,
+textarea,
+select,
+input.text,
+input.search,
+input.file,
+textarea.textarea,
+select.select {
+  border: none;
+  background: none;
+  padding: 10px;
   display: block;
   width: 100%;
   height: 34px;
@@ -5788,30 +5801,114 @@ input {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  display: inline-block;
+  width: auto;
 }
-input:focus {
+input:focus,
+textarea:focus,
+select:focus,
+input.text:focus,
+input.search:focus,
+input.file:focus,
+textarea.textarea:focus,
+select.select:focus {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
-input::-moz-placeholder {
+input::-moz-placeholder,
+textarea::-moz-placeholder,
+select::-moz-placeholder,
+input.text::-moz-placeholder,
+input.search::-moz-placeholder,
+input.file::-moz-placeholder,
+textarea.textarea::-moz-placeholder,
+select.select::-moz-placeholder {
   color: #999999;
   opacity: 1;
 }
-input:-ms-input-placeholder {
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+select:-ms-input-placeholder,
+input.text:-ms-input-placeholder,
+input.search:-ms-input-placeholder,
+input.file:-ms-input-placeholder,
+textarea.textarea:-ms-input-placeholder,
+select.select:-ms-input-placeholder {
   color: #999999;
 }
-input::-webkit-input-placeholder {
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+select::-webkit-input-placeholder,
+input.text::-webkit-input-placeholder,
+input.search::-webkit-input-placeholder,
+input.file::-webkit-input-placeholder,
+textarea.textarea::-webkit-input-placeholder,
+select.select::-webkit-input-placeholder {
   color: #999999;
 }
 input[disabled],
+textarea[disabled],
+select[disabled],
+input.text[disabled],
+input.search[disabled],
+input.file[disabled],
+textarea.textarea[disabled],
+select.select[disabled],
 input[readonly],
-fieldset[disabled] input {
+textarea[readonly],
+select[readonly],
+input.text[readonly],
+input.search[readonly],
+input.file[readonly],
+textarea.textarea[readonly],
+select.select[readonly],
+fieldset[disabled] input,
+fieldset[disabled] textarea,
+fieldset[disabled] select,
+fieldset[disabled] input.text,
+fieldset[disabled] input.search,
+fieldset[disabled] input.file,
+fieldset[disabled] textarea.textarea,
+fieldset[disabled] select.select {
   cursor: not-allowed;
   background-color: #eeeeee;
   opacity: 1;
 }
-textareainput {
+textareainput,
+textareatextarea,
+textareaselect,
+textareainput.text,
+textareainput.search,
+textareainput.file,
+textareatextarea.textarea,
+textareaselect.select {
   height: auto;
+}
+.error .help-block,
+.error .control-label,
+.error .radio,
+.error .checkbox,
+.error .radio-inline,
+.error .checkbox-inline {
+  color: #a94442;
+}
+.error .form-control {
+  border-color: #a94442;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.error .form-control:focus {
+  border-color: #843534;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+}
+.error .input-group-addon {
+  color: #a94442;
+  border-color: #a94442;
+  background-color: #f2dede;
+}
+.error .form-control-feedback {
+  color: #a94442;
 }
