@@ -1,5 +1,15 @@
 @import "bootstrap/less/bootstrap.less";
 
-input {
+input, textarea, select {
 	.form-control;
+}
+
+// .has-success {
+//   .form-control-validation(@state-success-text; @state-success-text; @state-success-bg);
+// }
+// .has-warning {
+//   .form-control-validation(@state-warning-text; @state-warning-text; @state-warning-bg);
+// }
+.error {
+  .form-control-validation(@state-danger-text; @state-danger-text; @state-danger-bg);
 }
