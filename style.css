@@ -2666,8 +2666,8 @@ textareatextarea.textarea,
 textareaselect.select {
   height: auto;
 }
-textarea {
-  height: auto !important;
+textarea.textarea {
+  height: auto;
 }
 .error .help-block,
 .error .control-label,
