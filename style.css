@@ -2666,6 +2666,9 @@ textareatextarea.textarea,
 textareaselect.select {
   height: auto;
 }
+textarea {
+  height: auto !important;
+}
 .error .help-block,
 .error .control-label,
 .error .radio,
