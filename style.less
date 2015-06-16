@@ -16,6 +16,11 @@ input, textarea, select, input.text, input.search, input.file, textarea.textarea
 
 textarea.textarea {
 	height: auto;
+	width: 100%;
+
+	@media (min-width: @screen-sm-min) {
+		width: auto;
+	}
 }
 
 // .has-success {

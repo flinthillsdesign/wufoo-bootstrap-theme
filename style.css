@@ -3332,6 +3332,12 @@ textareaselect.select {
 }
 textarea.textarea {
   height: auto;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  textarea.textarea {
+    width: auto;
+  }
 }
 .error .help-block,
 .error .control-label,
