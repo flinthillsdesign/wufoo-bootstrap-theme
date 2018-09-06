@@ -1,7 +1,7 @@
 wufoo-bootstrap-theme
 =====================
 
-### CSS for giving Wufoo forms the Bootstrap style.
+### CSS for giving Wufoo forms the [Bootstrap v3](https://getbootstrap.com/docs/3.3/css/#forms) style.
 
 1. Create a Wufoo theme (might as well call it 'Bootstrap').
 2. Under 'Advanced' insert ```https://wustrap.fhdlabs.com/r/style.css```.
